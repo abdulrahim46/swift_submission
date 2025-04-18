@@ -81,16 +81,16 @@ No you can't because non-optional is expected to a value & there will be a type 
 
 // set
 
-let input = "abcabcasdf"
-var seen: Set<Character> = []
-let result = input.filter { char in
-    if seen.contains(char) {
-        return false
-    } else {
-        seen.insert(char)
-        return true
-    }
-}
+// let input = "abcabcasdf"
+// var seen: Set<Character> = []
+// let result = input.filter { char in
+//     if seen.contains(char) {
+//         return false
+//     } else {
+//         seen.insert(char)
+//         return true
+//     }
+// }
 
 func removeDuplicates(input: String = "abcabcasdf") -> String {
     return String(Set(input))
